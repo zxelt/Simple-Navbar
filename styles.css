@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s;
+}
+body{
+    background-color: rgb(28, 28, 28);
+}
+h1,h2,h3,h4,h5,h6,a,p{
+    color: rgb(198, 197, 197);
+    
+}
+.navbar{
+    background-color: rgb(33, 33, 33);
+}
+.Line{
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    width: 32px;
+    margin-top: 6px;
+    height: 3px;
+}
+ul {
+    list-style-type: none;
+}
+
+.Nav{
+    display: flex;
+    padding: 15px;
+}
+
+.Nav-Link{
+    margin: 20px;
+    text-decoration: none;
+    color: rgb(223, 223, 223);
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.Nav-Link:hover{
+    background-color: rgb(48, 48, 48);
+    transition: 0.3s;
+    
+}
+
+.Nav-Link:visited{
+    text-decoration: none;
+    color: rgb(223, 223, 223);
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(223, 223, 223);
+    margin: 5px 0;
+}
+
+
+@media (max-width: 1036px) {
+    .hamburger{
+        display: block;
+        z-index: 999;
+    }
+    .Nav {
+        display: none;
+        flex-direction: column;
+        background-color: rgb(38, 38, 38);
+        position: absolute;
+
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 1;
+    }
+    .Nav.active {
+        display: flex;
+    }
+}
